@@ -21,8 +21,8 @@ const themes = {
     // Default theme is required for theming system to work correctly!
     'default': {
         primary  : {
-            ...colors.indigo,
-            DEFAULT: colors.indigo[600]
+            ...colors.zinc,
+            DEFAULT: colors.zinc[600]
         },
         accent   : {
             ...colors.slate,
@@ -39,7 +39,10 @@ const themes = {
     // Rest of the themes will use the 'default' as the base
     // theme and will extend it with their given configuration.
     'brand' : {
-        primary: customPalettes.black_piano
+        primary: {
+            ...colors.zinc,
+            DEFAULT: colors.zinc[900]
+        }
     },
     'teal'  : {
         primary: {
