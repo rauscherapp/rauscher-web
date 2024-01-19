@@ -22,7 +22,18 @@ export const defaultNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_mini:newspaper',
         link : '/notes',
-    },    
+    },
+    {
+        id   : 'apps.mailbox',
+        title: 'Mailbox',
+        type : 'basic',
+        icon : 'heroicons_outline:envelope',
+        link : '/mailbox',
+        badge: {
+            title  : '27',
+            classes: 'px-2 bg-pink-600 text-white rounded-full',
+        },
+    }
 
 ];
 export const compactNavigation: FuseNavigationItem[] = [
@@ -46,6 +57,17 @@ export const compactNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_mini:newspaper',
         link : '/notes',
+    },
+    {
+        id   : 'apps.mailbox',
+        title: 'Mailbox',
+        type : 'basic',
+        icon : 'heroicons_outline:envelope',
+        link : '/mailbox',
+        badge: {
+            title  : '27',
+            classes: 'px-2 bg-pink-600 text-white rounded-full',
+        },
     }
 ];
 export const futuristicNavigation: FuseNavigationItem[] = [
@@ -69,7 +91,18 @@ export const futuristicNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_mini:newspaper',
         link : '/notes',
-    }   
+    },
+    {
+        id   : 'apps.mailbox',
+        title: 'Mailbox',
+        type : 'basic',
+        icon : 'heroicons_outline:envelope',
+        link : '/mailbox',
+        badge: {
+            title  : '27',
+            classes: 'px-2 bg-pink-600 text-white rounded-full',
+        },
+    }
 ];
 export const horizontalNavigation: FuseNavigationItem[] = [
     {
@@ -92,5 +125,16 @@ export const horizontalNavigation: FuseNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_mini:newspaper',
         link : '/notes',
-    }   
+    },
+    {
+        id   : 'apps.mailbox',
+        title: 'Mailbox',
+        type : 'basic',
+        icon : 'heroicons_outline:envelope',
+        link : '/mailbox',
+        badge: {
+            title  : '27',
+            classes: 'px-2 bg-pink-600 text-white rounded-full',
+        },
+    } 
 ];

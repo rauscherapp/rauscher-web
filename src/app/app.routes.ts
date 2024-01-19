@@ -77,6 +77,7 @@ export const appRoutes: Route[] = [
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.routes')},
             {path: 'aspnetusers', loadChildren: () => import('app/modules/admin/aspnetusers/apsnetusers.routes')},
             {path: 'notes', loadChildren: () => import('app/modules/admin/notes/notes.routes')},            
+            {path: 'mailbox', loadChildren: () => import('app/modules/admin/mailbox/mailbox.routes')},            
         ]
     }
 ];

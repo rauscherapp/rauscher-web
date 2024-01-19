@@ -34,14 +34,14 @@ export class MailboxMockApi
         // @ Settings - GET
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onGet('api/apps/mailbox/settings')
+            .onGet('api/mailbox/settings')
             .reply(() => [200, cloneDeep(this._settings)]);
 
         // -----------------------------------------------------------------------------------------------------
         // @ Settings - PATCH
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onPatch('api/apps/mailbox/settings')
+            .onPatch('api/mailbox/settings')
             .reply(({request}) =>
             {
                 // Get the settings
@@ -58,7 +58,7 @@ export class MailboxMockApi
         // @ Folders - GET
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onGet('api/apps/mailbox/folders')
+            .onGet('api/mailbox/folders')
             .reply(() =>
             {
                 let count = 0;
@@ -109,21 +109,21 @@ export class MailboxMockApi
         // @ Filters - GET
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onGet('api/apps/mailbox/filters')
+            .onGet('api/mailbox/filters')
             .reply(() => [200, cloneDeep(this._filters)]);
 
         // -----------------------------------------------------------------------------------------------------
         // @ Labels - GET
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onGet('api/apps/mailbox/labels')
+            .onGet('api/mailbox/labels')
             .reply(() => [200, cloneDeep(this._labels)]);
 
         // -----------------------------------------------------------------------------------------------------
         // @ Labels - POST
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onPost('api/apps/mailbox/label')
+            .onPost('api/mailbox/label')
             .reply(({request}) =>
             {
                 // Get the label
@@ -167,7 +167,7 @@ export class MailboxMockApi
         // @ Labels - PATCH
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onPatch('api/apps/mailbox/label')
+            .onPatch('api/mailbox/label')
             .reply(({request}) =>
             {
                 // Get the id and label
@@ -204,7 +204,7 @@ export class MailboxMockApi
         // @ Labels - DELETE
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onDelete('api/apps/mailbox/label')
+            .onDelete('api/mailbox/label')
             .reply(({request}) =>
             {
                 // Get the id
@@ -231,7 +231,7 @@ export class MailboxMockApi
         // @ Mails - GET
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onGet('api/apps/mailbox/mails', 625)
+            .onGet('api/mailbox/mails', 625)
             .reply(({request}) =>
             {
                 // First, decide if mails are requested by folder, filter or label
@@ -327,7 +327,7 @@ export class MailboxMockApi
         // @ Mail - GET
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onGet('api/apps/mailbox/mail')
+            .onGet('api/mailbox/mail')
             .reply(({request}) =>
             {
                 // Get the id from the params
@@ -349,7 +349,7 @@ export class MailboxMockApi
         // @ Mail - PATCH
         // -----------------------------------------------------------------------------------------------------
         this._fuseMockApiService
-            .onPatch('api/apps/mailbox/mail')
+            .onPatch('api/mailbox/mail')
             .reply(({request}) =>
             {
                 // Get the id and mail
